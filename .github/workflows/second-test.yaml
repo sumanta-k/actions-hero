@@ -5,7 +5,7 @@ on: [push]
 
 jobs:
     config-job:
-        runs-on: ubuntu-18.04
+        runs-on: ubuntu-latest
         steps:
             - name: print out the resources of my virtual machine, where github actions is running
               run: uname -a
