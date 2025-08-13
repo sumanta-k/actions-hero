@@ -1,0 +1,28 @@
+name: My first workflow
+
+# trigger point
+on: push
+# you can give mulitiple trigger point 
+# like
+# on: [push,fork]
+
+# now it's time for jobs , you can define multiple jobs
+# under this jobs: section
+jobs:
+  first_job:
+     runs-on: ubuntu-latest
+     # inside of the runner , you will define step , which will run in series(one after another)
+     steps:
+     # "name" is optional , not the "run" command cause that is what we truly want in our whole ci/cd , that is the "key"
+     - name: Welcome to my first step
+       run: echo "Welcome to my first step, where i'm running echo command inside the terminal of ubuntu-latest, similar to this"
+
+     - name: Second step looking what is the ubuntu version
+       run: uname -a
+
+     - name: listing out what are the files do i 've inside this github repository
+       run: ls -a
+     
+  # second_job:
+     # runs-on: ubuntu-latest
+  
