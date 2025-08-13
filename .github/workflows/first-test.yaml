@@ -5,7 +5,9 @@ on: [push]
 jobs:
     runs-on: ubuntu-latest
     first_job:
-        - name: FIRST  JOB
-          run: echo "first Attempt"
-        - name: Last step to exit out of it
-          run: echo "Exiting out of this box.🤣"
+        runs-on: ubuntu-latest
+        steps:
+            - name: FIRST  JOB
+              run: echo "first Attempt"
+            - name: Last step to exit out of it
+              run: echo "Exiting out of this box.🤣"
