@@ -1,0 +1,11 @@
+name: Created by happy but without looking at other reference
+
+on: [push]
+
+jobs:
+    runs-on: ubuntu-latest
+    first_job:
+        - name: FIRST  JOB
+          run: echo "first Attempt"
+        - name: Last step to exit out of it
+          run: echo "Exiting out of this box.🤣"
