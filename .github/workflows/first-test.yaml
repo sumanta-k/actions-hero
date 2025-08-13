@@ -3,7 +3,6 @@ name: Created by happy but without looking at other reference
 on: [push]
 
 jobs:
-    runs-on: ubuntu-latest
     first_job:
         runs-on: ubuntu-latest
         steps:
