@@ -1,0 +1,13 @@
+name: second-test by me
+
+# trigger point
+on: [push]
+
+jobs:
+    config-job:
+        runs-on: ubuntu-18.04
+        steps:
+            - name: print out the resources of my virtual machine, where github actions is running
+              run: uname -a
+            - name: exiting out of it
+              run: echo "exit from the VM"
